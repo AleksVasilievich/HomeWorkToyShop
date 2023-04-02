@@ -1,22 +1,26 @@
 package JavaToyshop;
 
 public abstract class Shop {
-    private int id;
-    private int price;
-    private int chance;
-    private String name;
-//    private String prize;
+    private int id;  // id
+    private int price;  // количество игрушек
+    private int weight;  // вес игрушки
+    private String name;  //  имя игрушки
 
+    public Shop(int id, int price, int weight, String name) {
+        this.id = id;
+        this.price = price;
+        this.weight = weight;
+        this.name = name;
+    }
+
+    public Shop(int id, int weight, String name) {
+        this.id = id;
+        this.weight = weight;
+        this.name = name;
+    }
 
     public Shop() {
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getId() {
@@ -35,12 +39,29 @@ public abstract class Shop {
         this.price = price;
     }
 
-    public int getChance() {
-        return chance;
+    public int getWeight() {
+        return weight;
     }
 
-    public void setChance(int chance) {
-        this.chance = chance;
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Shop{" +
+                "id=" + id +
+                ", price=" + price +
+                ", weight=" + weight +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
