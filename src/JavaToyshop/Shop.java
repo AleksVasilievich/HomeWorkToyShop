@@ -5,9 +5,18 @@ public abstract class Shop {
     private int price;
     private int chance;
     private String name;
+//    private String prize;
 
 
     public Shop() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getId() {
@@ -34,11 +43,4 @@ public abstract class Shop {
         this.chance = chance;
     }
 
-    public String getName(String name) {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
