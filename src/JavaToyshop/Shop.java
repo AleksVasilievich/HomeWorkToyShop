@@ -1,19 +1,23 @@
 package JavaToyshop;
 
+import java.util.List;
+
 public abstract class Shop {
     private int id;  // id
     private int price;  // количество игрушек
-    private int weight;  // вес игрушки
+    private double weight;  // вес игрушки
     private String name;  //  имя игрушки
+    private List<Shop> shopList;
+    public Shop(List<Shop> shopList) {this.shopList = shopList; }
 
-    public Shop(int id, int price, int weight, String name) {
+    public Shop(int id, int price, double weight, String name) {
         this.id = id;
         this.price = price;
         this.weight = weight;
         this.name = name;
     }
 
-    public Shop(int id, int weight, String name) {
+    public Shop(int id, double weight, String name) {
         this.id = id;
         this.weight = weight;
         this.name = name;
@@ -39,11 +43,11 @@ public abstract class Shop {
         this.price = price;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
