@@ -12,7 +12,9 @@ public class Prize extends Toy {
         super(id, weight, name);
     }
 
-
+    public Prize() {
+        super();
+    }
 
 
     public Shop optionWeight(List<Shop> shopList) {

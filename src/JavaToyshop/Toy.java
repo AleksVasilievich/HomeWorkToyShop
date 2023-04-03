@@ -11,6 +11,11 @@ public class Toy extends Shop {
         super(id, weight, name);
     }
 
+    public Toy() {
+
+    }
+
+
     @Override
     public String toString() {
         return "Shop{" +

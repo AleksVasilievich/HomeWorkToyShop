@@ -8,7 +8,7 @@ public abstract class Shop {
     private double weight;  // вес игрушки
     private String name;  //  имя игрушки
     private List<Shop> shopList;
-//    public Shop(List<Shop> shopList) {this.shopList = shopList; }
+    public Shop(List<Shop> shopList) {this.shopList = shopList; }
 
     public Shop(int id, int price, double weight, String name) {
         this.id = id;
