@@ -76,4 +76,16 @@ public abstract class Shop {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+
+
+//        @Override
+//    public String toString() {
+//        return "Shop{" +
+//                "id=" + id +
+//                ", price=" + price +
+//                ", weight=" + weight +
+//                ", name='" + name + '\'' +
+//                '}';
+//    }
 }

@@ -7,9 +7,9 @@ public class Program {
     public static void main(String[] args) {
         Toy toy = new Toy(1, 100, 4.0, "Машина");
         Toy toy1 = new Toy(1, 4.0, "Машина");
-        Toy toy2 = new Toy(1, 3.0, "Кукла");
-        Toy toy3 = new Toy(1, 2.5, "Ракета");
-        Toy toy4 = new Toy(1, 5.1, "Неваляшка");
+        Toy toy2 = new Toy(2, 3.0, "Кукла");
+        Toy toy3 = new Toy(3, 2.5, "Ракета");
+        Toy toy4 = new Toy(4, 5.1, "Неваляшка");
         toy1.setPrice(1);
         List<Shop> shopList = new ArrayList<Shop>();
         shopList.add(toy1);
