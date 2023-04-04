@@ -32,7 +32,7 @@ public class PrintPrize extends Prize {
     public void listToyPrize() {
         Shop shop = getPrizeToy();
         String text = shop.toString();
-        try(FileWriter writer = new FileWriter("src/JavaToyshop/Proluct.txt", true))
+        try(FileWriter writer = new FileWriter("src/JavaToyshop/Product.txt", true))
         {
             writer.write(text);
             writer.append('\n');
