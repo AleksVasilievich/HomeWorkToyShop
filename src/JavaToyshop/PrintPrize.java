@@ -22,16 +22,8 @@ public class PrintPrize extends Prize {
     }
 
 
-
-    public Shop getPrizeToy(){
-        Prize randOm = new Prize();
-        Shop shop = randOm.optionWeight(getShopList());
-        return shop;
-    }
-
     public void listToyPrize() {
-        Shop shop = getPrizeToy();
-        String text = shop.toString();
+        String text = optionWeight(getShopList()).toString();
         try(FileWriter writer = new FileWriter("src/JavaToyshop/Product.txt", true))
         {
             writer.write(text);
@@ -42,7 +34,7 @@ public class PrintPrize extends Prize {
 
             System.out.println(ex.getMessage());
         }
-        getShopList().remove(shop);
+        getShopList().remove(optionWeight(getShopList()));
     }
 
 }

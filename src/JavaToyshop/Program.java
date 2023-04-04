@@ -29,15 +29,15 @@ public class Program {
         shopList.add(toy9);
         shopList.add(toy10);
 
-        System.out.println(shopList);
-        System.out.println(toy);
-        System.out.println(toy1);
+//        System.out.println(shopList);
+//        System.out.println(toy);
+//        System.out.println(toy1);
 
         PrintPrize printPrize = new PrintPrize(shopList);
         printPrize.listToyPrize();
-//        printPrize.listToyPrize();
-//        printPrize.listToyPrize();
-//        printPrize.listToyPrize();
+        printPrize.listToyPrize();
+        printPrize.listToyPrize();
+        printPrize.listToyPrize();
 
     }
 }

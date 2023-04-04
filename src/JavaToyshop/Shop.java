@@ -77,8 +77,6 @@ public abstract class Shop {
                 '}';
     }
 
-
-
 //        @Override
 //    public String toString() {
 //        return "Shop{" +
