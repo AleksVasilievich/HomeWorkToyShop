@@ -20,3 +20,11 @@ Shop{id=5, weight=2.2, name='Пупсик'}
 Shop{id=3, weight=4.5, name='Ракета'}
 Shop{id=9, weight=2.5, name='Конструктор'}
 Shop{id=9, weight=2.5, name='Конструктор'}
+Shop{id=1, weight=2.7, name='Машина'}
+Shop{id=4, weight=3.1, name='Неваляшка'}
+Shop{id=7, weight=6.8, name='Самалёт'}
+Shop{id=4, weight=3.1, name='Неваляшка'}
+Shop{id=1, weight=2.7, name='Машина'}
+Shop{id=8, weight=1.8, name='Бегемот'}
+Shop{id=6, weight=5.4, name='Лунтик'}
+Shop{id=9, weight=2.5, name='Конструктор'}
